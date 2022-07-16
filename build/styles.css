@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.app {
+  background-color: #eee;
+  height: 200vh;
+  width: 100%;
+}
+
+#dark .app {
+  background-color: #212121;
+}
+
+/* Header */
+
+header {
+  background-color: #f5ba13;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#dark header {
+  background-color: #3d3d3d;
+}
+
+header div {
+  margin-left: 330px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative;
+  border-radius: 7px;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+header div i {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  color:rgb(102, 99, 99)
+}
+
+#dark header div i {
+  color: rgb(223, 223, 223);
+}
+
+header div input {
+  width: 400px;
+  font-size: medium;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 7px;
+  background-color: #f5dda0;
+  color:rgb(102, 99, 99);
+  outline: none
+}
+
+header div input:hover {
+  background-color: #f5e3b5;
+}
+
+header div input:focus {
+  background-color: #f7e9c6;
+  box-shadow: 0 0.1px 3px rgb(117, 115, 115);
+}
+
+#dark header div input {
+  background-color: #181818;
+  color: #fff;
+}
+
+#dark ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    rgb(201, 194, 194);
+}
+
+
+.moon-icon {
+  position: absolute;
+  right: 100px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.moon-icon:hover{
+  cursor: pointer;
+}
+
+#dark .moon-icon {
+  color: #f5ba13;
+}
+
+#light .moon-icon {
+  color: #212121;
+}
+
+/* Footer */
+
+footer {
+  position: static;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+footer p {
+  color: #3d3d3d;
+  margin-top: 10px;
+}
+
+#dark footer p {
+  color: #fff
+}
+
+/* Note */
+
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 220px;
+  margin: 16px;
+  float: left;
+}
+
+#dark .note {
+  background-color: #3d3d3d;
+  box-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+#dark .note h1 {
+  color: #fff;
+}
+
+#dark .note .content {
+  color: #fff;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgb(138, 137, 137);
+  cursor: pointer;
+  outline: none;
+  width: 36px;
+  height: 36px;
+}
+
+#dark .note button {
+  background-color: #181818;
+  box-shadow: 0 1px 2px rgb(0, 0, 0);
+}
+
+.note button:hover {
+  transform: scale(1.2);
+  transition: 0.3s all ease;
+  box-shadow: 0 1px 2px rgb(138, 137, 137);
+}
+
+.note button p {
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  font-size: x-large;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+#dark form {
+  background-color: #3d3d3d;
+  box-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+#dark form input {
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+#dark form textarea {
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  font-size: x-large;
+  box-shadow: 0 1px 4px rgb(138, 137, 137);
+  transform: scale(1);
+}
+
+#dark form button {
+  box-shadow: 0 1px 5px rgb(0, 0, 0);
+}
+
+form button:hover {
+  transform: scale(1.2);
+  transition: 0.3s all ease;
+  box-shadow: 0 1px 2px rgb(138, 137, 137);
+}
